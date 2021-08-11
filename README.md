@@ -21,3 +21,8 @@ node server/index.js
 # 📷 Screenshot
 
 ![pokemon-database](https://user-images.githubusercontent.com/25122604/129015585-98ad66f4-fea4-4ce5-ac11-1b896355196f.png)
+
+### Don't forget to give this repo a ⭐ if you like this repo and want to appreciate the efforts
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
