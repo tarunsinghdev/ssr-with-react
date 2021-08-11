@@ -5,7 +5,7 @@ import ReactDOMServer from 'react-dom/server';
 
 import App from '../../src/App.js';
 
-const initialRenderController = (req, res, next) => {
+const initialRenderController = (req, res) => {
   console.log(path.resolve());
   fs.readFile(
     path.resolve('../client/build/index.html'),
