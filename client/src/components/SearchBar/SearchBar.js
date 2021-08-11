@@ -1,29 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './SearchBar.css';
 
-const SearchBar = () => {
-  const [term, setTerm] = useState('');
-  const [inputText, setInputText] = useState('');
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-    setTerm(e.target.value);
-  };
-
+const SearchBar = ({ filterPokemonHandler }) => {
   return (
     <div className="searchbar">
-      <form onSubmit={submitHandler}>
-        <input
-          className="searchbar__input"
-          type="text"
-          placeholder="Search by Pokemon name"
-          onChange={(e) => setInputText(e.target.value)}
-        />
-        <a onClick={submitHandler} className="searchbar__button">
-          Search{' '}
-        </a>{' '}
-      </form>
+      <input
+        className="searchbar__input"
+        type="text"
+        placeholder="Search by Pokemon name"
+        onChange={(e) => filterPokemonHandler(e.target.value)}
+      />
     </div>
   );
 };
